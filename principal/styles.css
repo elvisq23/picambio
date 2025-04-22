@@ -104,9 +104,8 @@
 
 /*&&&&&&&&&&&&&&&&&&&&&&&& FOOTER &&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 
-/* ESTILOS PARA FOOTER - Agregar a tu styles.css */
 .footer-container {
-    background-color: var(--color-primario); /* Azul oscuro que combina con tu esquema */
+    background-color: var(--color-primario); 
     color: #ffffff;
     padding: 3rem 0 0;
     font-family: 'Segoe UI', system-ui, sans-serif;
@@ -119,7 +118,7 @@
 .footer-logo img {
     height: 50px;
     margin-bottom: 1rem;
-    filter: brightness(0) invert(1); /* Convierte logo a blanco */
+    filter: brightness(0) invert(1);
 }
 
 .footer-title {
@@ -138,7 +137,7 @@
     bottom: 0;
     width: 40px;
     height: 2px;
-    background: white; /* Azul claro para el subrayado */
+    background: white;
 }
 
 .footer-links {
@@ -198,7 +197,7 @@
     font-size: 0.9rem;
 }
 
-/* Responsive */
+/* para dispositivos mobiles */
 @media (max-width: 768px) {
     .footer-col {
         text-align: center;
@@ -221,7 +220,7 @@
 @media (max-width: 992px) {
     .lista-enlaces {
         position: fixed;
-        top: 80px; /* Ajusta según altura de tu header */
+        top: 80px;
         left: -100%;
         width: 100%;
         height: calc(100vh - 80px);

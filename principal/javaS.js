@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Función para mostrar contenido (igual que antes)
 function showContent(seccionId) {
-    // Ocultar todas las secciones
+    // oculta todas las secciones
     document.querySelectorAll('.seccion').forEach(seccion => {
         seccion.style.display = 'none';
     });
 
-    // Mostrar la sección seleccionada
+    // muestra la seccion seleccionada
     const seccion = document.getElementById(seccionId);
     if (seccion) {
         seccion.style.display = 'block';
