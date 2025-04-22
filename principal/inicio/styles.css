@@ -1,0 +1,236 @@
+/*&&&&&&&&&&&&&&&&&&&&&&&& INICIO &&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+.contenedor-principal {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+    background-color: var(--color-secundario);
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .imagen-promocional {
+    display: grid;
+    place-items: center;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .imagen-promocional img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .calculadora {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  .selector-direccion {
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  #cambiar-direccion {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .campo-monto, .campo-resultado {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .campo-monto label, .campo-resultado label {
+    width: 40px;
+    font-weight: bold;
+  }
+  
+  .campo-monto input, .campo-resultado input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    min-width: 0;
+  }
+  
+  .acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  #cupon {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  #aplicar-cupon {
+    background-color: #f0f0f0;
+    
+  }
+  
+  #iniciar-operacion {
+    background-color: #065e23;
+    color: white;
+  }
+
+  #aplicar-cupon, #iniciar-operacion {
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+
+  
+  /* para dispositivos moviles */
+  @media (max-width: 768px) {
+    .contenedor-principal {
+      flex-direction: column;
+      gap: 20px;
+      padding: 15px;
+    }
+    
+    .imagen-promocional {
+      margin-top: 20px;
+    }
+    
+    .calculadora {
+      max-width: 100%;
+    }
+    
+    #cambiar-direccion {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .campo-monto, .campo-resultado {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .campo-monto label, .campo-resultado label {
+      margin-bottom: 5px;
+      width: auto;
+    }
+
+  }
+
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&& PASOS DE CAMBIO &&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.seccion-pasos {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .seccion-pasos h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .pasos-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .paso {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+
+  .numero-paso {
+    background-color: #4CAF50;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contenido-paso h3 {
+    color: #2c3e50;
+  }
+  
+  .contenido-paso p {
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+  
+  .boton-primario-registro {
+    display: block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    width: 40%;
+  }
+  
+  .boton-primario:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+  }
+  
+  /* para dispositivos mobiles */
+  @media (max-width: 768px) {
+    .pasos-container {
+      flex-direction: column;
+    }
+    
+    .paso:not(:last-child)::after {
+      display: none;
+    }
+    
+    .paso {
+      margin-bottom: 30px;
+    }
+
+    .boton-primario-registro {
+        width: 60%;
+      }
+  }

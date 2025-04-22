@@ -44,7 +44,72 @@
     </header>
 
     <div id="inicio" class="seccion">
-        <h1>inicio</h1>
+        <link rel="stylesheet" href="inicio/styles.css">
+        <script src="inicio/javas.js" defer></script>
+        <div class="contenedor-principal">
+            <div class="imagen-promocional">
+              <img src="../imagenes/calculadora.jpg" alt="calculadora">
+            </div>
+            
+            <div class="calculadora">
+              <h2>Calculadora</h2>
+              <div class="conversor">
+                <div class="selector-direccion">
+                  <button id="cambiar-direccion">
+                    <span id="moneda-origen">π</span> ↔ <span id="moneda-destino">$</span>
+                  </button>
+                </div>
+
+                <div class="campo-monto">
+                  <label id="label-origen">π</label>
+                  <input type="number" id="monto-origen" placeholder="0" value="">
+                </div>
+                
+                <div class="campo-resultado">
+                  <label id="label-destino">$</label>
+                  <input type="text" id="monto-destino" placeholder="0" readonly>
+                </div>
+                
+                <div class="acciones">
+                  <input type="text" id="cupon" placeholder="Ingresa aquí tu cupón">
+                  <button id="aplicar-cupon">Aplicar</button>
+                  <button id="iniciar-operacion">Iniciar operación</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="seccion-pasos">
+            <h1>Cambia tus dólares y soles en 3 simples pasos</h1>
+            
+            <div class="pasos-container">
+              <div class="paso">
+                <div class="numero-paso">1</div>
+                <div class="contenido-paso">
+                  <h3>Regístrate y opera</h3>
+                  <p>Cotiza e ingresa el monto que deseas cambiar.</p>
+                </div>
+              </div>
+              
+              <div class="paso">
+                <div class="numero-paso">2</div>
+                <div class="contenido-paso">
+                  <h3>Transfiere</h3>
+                  <p>Envía el dinero a nuestra cuenta con tu comprobante.</p>
+                </div>
+              </div>
+              
+              <div class="paso">
+                <div class="numero-paso">3</div>
+                <div class="contenido-paso">
+                  <h3>Recibe tu cambio</h3>
+                  <p>Te abonaremos al mejor tipo de cambio.</p>
+                </div>
+              </div>
+            </div>
+            
+            <button class="boton-primario-registro">Regístrate ahora</button>
+          </div>
     </div>
 
     <div id="nosotros" class="seccion">
