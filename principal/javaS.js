@@ -57,3 +57,24 @@ function showContent(seccionId) {
         seccion.style.display = 'block';
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const preguntas = document.querySelectorAll('.faq-question');
+  
+    preguntas.forEach(pregunta => {
+      pregunta.addEventListener('click', () => {
+        const respuesta = pregunta.nextElementSibling;
+  
+        // Oculta otras respuestas abiertas
+        document.querySelectorAll('.faq-answer').forEach(otra => {
+          if (otra !== respuesta) {
+            otra.style.display = 'none';
+          }
+        });
+  
+        // Alternar visibilidad
+        respuesta.style.display = respuesta.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  });
